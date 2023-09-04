@@ -81,6 +81,10 @@ In addition, BuildIt includes a marketplace where users can sell their land thro
 
 Also, users can transfer their util items from one chain to another ( using Axelar )
 
+While editing the map, user can also save/load private designs which is saved using sprucekit.
+
+In marketplace listing, if seller owns an ENS account then it will display it so that it add more credibility about seller.
+
 ## How We Built It
 
 BuildIt was built using the following technologies and tools:
@@ -96,6 +100,8 @@ BuildIt was built using the following technologies and tools:
 - Wallet Integration: Users can connect their wallets, such as Metamask, Coinbase, and WalletConnect, to interact with the metaverse.
 - Gasless Transactions: All smart contracts implement ERC2771Context, enabling users to perform gasless transactions when the relayer is funded.
 - Axelar was used facilitate cross chain transfer of util items from one chain to another
+- Sprucekit was used to let User Save/Load private designs
+- ENS was used to resolve custom name for users in marketplace
 
 ## Challenges We Ran Into
 
@@ -105,6 +111,7 @@ During the development of BuildIt, we encountered several challenges, including:
 - Implementing ERC721 and ERC1155 token standards and handling the transfer of ownership between users and their land/items.
 - Optimizing gas usage and transaction costs in smart contract deployments.
 - Developing a user-friendly interface and seamless wallet integration for a smooth user experience.
+- Sprucekit sdk was mainly for Reactjs project, so to pass message between game build for wasm to Reactjs was challenging.
 
 ## Accomplishments That We're Proud Of
 
