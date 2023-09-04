@@ -31,7 +31,7 @@ To deploy smart contracts:
 ```bash
 npx hardhat deploy --network $ChainName
 
-# example: npx hardhat deploy --network arbitrumGoerli
+# example: npx hardhat deploy --network oasysTestnet
 ```
 
 Note: Don't forget to make .env file, refer .env.example file.
@@ -42,15 +42,15 @@ Note: Don't forget to make .env file, refer .env.example file.
 
 Website can also be used which is build for webgl and will works on both desktop and mobile.
 
-## Smart Contracts ( Arbitrum Goerli )
+## Smart Contracts ( Oasys Testnet )
 
-| Contract                                                                                                 | Explorer Link                                                                                                               |
-| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| [Map.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Map.sol)                 | [0x91db12F3eA6F4598c982D46e8Fdc72B53c333AFb](https://goerli.arbiscan.io/address/0x91db12f3ea6f4598c982d46e8fdc72b53c333afb) |
-| [Utils.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Utils.sol)             | [0x4A4e6Cc94507B6aD2c91aD765d3f5B566B15d895](https://goerli.arbiscan.io/address/0x4a4e6cc94507b6ad2c91ad765d3f5b566b15d895) |
-| [Faucet.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Faucet.sol)           | [0x724257edfe7f3bbf8c06a01ae3becb48dc5e220a](https://goerli.arbiscan.io/address/0x724257edfe7f3bbf8c06a01ae3becb48dc5e220a) |
-| [Marketplace.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Marketplace.sol) | [0x20294525826458177030954Af848D783f733A80A](https://goerli.arbiscan.io/address/0x20294525826458177030954af848d783f733a80a) |
-| [Forwarder.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Forwarder.sol)     | [0x65D84C0883e0e0c9c41B044b4523cd07999924Fe](https://goerli.arbiscan.io/address/0x20294525826458177030954af848d783f733a80a) |
+| Contract                                                                                                 | Explorer Link                                                                                                                         |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [Map.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Map.sol)                 | [0xdF78D5A57DCFf31Ca18978b56760867010AEBC2E](https://explorer.testnet.oasys.games/address/0xdF78D5A57DCFf31Ca18978b56760867010AEBC2E) |
+| [Utils.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Utils.sol)             | [0x11DA0f57086a19977E46B548b64166411d839a30](https://explorer.testnet.oasys.games/address/0x11DA0f57086a19977E46B548b64166411d839a30) |
+| [Faucet.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Faucet.sol)           | [0x76cfdE04F691B93c9993Be24d5FE7667E7A8782C](https://explorer.testnet.oasys.games/address/0x76cfdE04F691B93c9993Be24d5FE7667E7A8782C) |
+| [Marketplace.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Marketplace.sol) | [0x489d47E592639Ba11107E84dd6CCA08F0892E27d](https://explorer.testnet.oasys.games/address/0x489d47E592639Ba11107E84dd6CCA08F0892E27d) |
+| [Forwarder.sol](https://github.com/Ahmed-Aghadi/BuildIt/blob/main/smart_contracts/src/Forwarder.sol)     | [0xCA34FF4068f042203087D475805c4DD8347cE958](https://explorer.testnet.oasys.games/address/0xCA34FF4068f042203087D475805c4DD8347cE958) |
 
 ## Table of Contents
 

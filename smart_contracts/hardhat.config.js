@@ -48,6 +48,8 @@ const MANTLE_TESTNET_API_KEY =
   process.env.MANTLE_TESTNET_API_KEY || "Your polygonscan API key";
 const ARBITRUM_GOERLI_TESTNET_API_KEY =
   process.env.ARBITRUM_GOERLI_TESTNET_API_KEY || "Your polygonscan API key";
+const OASYS_TESTNET_API_KEY =
+  process.env.OASYS_TESTNET_API_KEY || "Your polygonscan API key";
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -174,6 +176,14 @@ module.exports = {
       chainId: 421613,
       timeout: 300000, // 300 seconds
     },
+    oasysTestnet: {
+      url: "https://rpc.testnet.oasys.games",
+      // accounts: [MAIN_PRIVATE_KEY],
+      accounts: [PRIVATE_KEY],
+      saveDeployments: true,
+      chainId: 9372,
+      timeout: 300000, // 300 seconds
+    },
   },
   etherscan: {
     // To list networks supported by default: npx hardhat verify --list-networks
@@ -190,6 +200,7 @@ module.exports = {
       fantom: FANTOMSCAN_API_KEY,
       opera: FANTOMSCAN_API_KEY, // fantom opera
       arbitrumGoerli: ARBITRUM_GOERLI_TESTNET_API_KEY,
+      oasysTestnet: OASYS_TESTNET_API_KEY,
     },
     customChains: [
       {
@@ -206,6 +217,14 @@ module.exports = {
         urls: {
           apiURL: "https://explorer.testnet.mantle.xyz/api",
           browserURL: "https://explorer.testnet.mantle.xyz",
+        },
+      },
+      {
+        network: "oasysTestnet",
+        chainId: 9372,
+        urls: {
+          apiURL: "https://explorer.testnet.oasys.games/api",
+          browserURL: "https://explorer.testnet.oasys.games",
         },
       },
     ],
